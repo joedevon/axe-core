@@ -14,7 +14,7 @@ Axe is an accessibility testing engine for websites and other HTML-based user in
 
 ## The Accessibility Rules
 
-Axe-core has different types of rules, for WCAG 2.0, 2.1, 2.2 on level A, AA and AAA as well as a number of best practices that help you identify common accessibility practices like ensuring every page has an `h1` heading, and to help you avoid "gotchas" in ARIA like where an ARIA attribute you used will get ignored. The complete list of rules, grouped WCAG level and best practice, can found in [doc/rule-descriptions.md](./doc/rule-descriptions.md).
+Axe-core has different types of rules, for WCAG 2.0, 2.1, and 2.2 on level A, AA and AAA as well as a number of best practices that help you identify common accessibility practices like ensuring every page has an `h1` heading, and to help you avoid "gotchas" in ARIA like where an ARIA attribute you used will get ignored. The complete list of rules, grouped ny WCAG level and best practice, can be found in [doc/rule-descriptions.md](./doc/rule-descriptions.md).
 
 With axe-core, you can find **on average 57% of WCAG issues automatically**. Additionally, axe-core will return elements as "incomplete" where axe-core could not be certain, and manual review is needed.
 
@@ -103,7 +103,7 @@ or equivalently:
 
 This will create a new build for axe, called `axe.<lang>.js` and `axe.<lang>.min.js`. If you want to build all localized versions, simply pass in `--all-lang` instead. If you want to build multiple localized versions (but not all of them), you can pass in a comma-separated list of languages to the `--lang` flag, like `--lang=nl,ja`.
 
-To create a new translation for axe, start by running `grunt translate --lang=<langcode>`. This will create a json file fin the `./locales` directory, with the default English text in it for you to translate. Alternatively, you could copy `./locales/_template.json`. We welcome any localization for axe-core. For details on how to contribute, see the Contributing section below. For details on the message syntax, see [Check Message Template](/docs/check-message-template.md).
+To create a new translation for axe, start by running `grunt translate --lang=<langcode>`. This will create a json file in the `./locales` directory, with the default English text in it for you to translate. Alternatively, you could copy `./locales/_template.json`. We welcome any localization for axe-core. For details on how to contribute, see the Contributing section below. For details on the message syntax, see [Check Message Template](/docs/check-message-template.md).
 
 To update existing translation file, re-run `grunt translate --lang=<langcode>`. This will add new messages used in English and remove messages which were not used in English.
 
